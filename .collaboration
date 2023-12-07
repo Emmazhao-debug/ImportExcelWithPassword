@@ -279,5 +279,15 @@
     },
     "LockDateTime": "2023-12-07T17:36:59.8441912+08:00",
     "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/Server Command6",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "GRAPECITY\\EmmaZhao",
+      "Email": "Emma.zhao@developertools.com"
+    },
+    "LockDateTime": "2023-12-07T18:19:06.2545607+08:00",
+    "ModuleType": 15
   }
 ]
