@@ -247,15 +247,5 @@
     },
     "LockDateTime": "2023-12-07T16:52:56.582912+08:00",
     "ModuleType": 15
-  },
-  {
-    "ModuleName": "ServerCommand/ImportExel_001",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T16:54:58.7431488+08:00",
-    "ModuleType": 15
   }
 ]
