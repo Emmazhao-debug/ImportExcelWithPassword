@@ -1,0 +1,414 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 33.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,32": "export",
+    "4,32": "import(add)",
+    "4,41": "Sheet name",
+    "7,32": "import(merge)",
+    "7,41": "Skip rows",
+    "10,32": "import(replace)"
+  },
+  "Formulas": {
+    "3,41": "LEN(password)"
+  },
+  "AttachInfos": {
+    "2,3": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "Table1",
+        "RowIndex": 2,
+        "ColumnIndex": 3,
+        "RowCount": 13,
+        "ColumnCount": 28,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
+            "Password": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=importExceltoListview!password"
+            },
+            "ListViewName": "Listview1",
+            "NewOtherName": "",
+            "IsOnlyExportValue": false
+          }
+        ],
+        "Text": "export",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,41": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "Items": [
+          {
+            "Value": "xA123456@ga",
+            "DisplayValue": "xA123456@ga"
+          },
+          {
+            "Value": "中文密码输入[01]",
+            "DisplayValue": "中文密码输入[01]"
+          },
+          {
+            "Value": "行けそう０１０２",
+            "DisplayValue": "行けそう０１０２"
+          },
+          {
+            "Value": "셛져ㅐㅗㅕㅑ",
+            "DisplayValue": "셛져ㅐㅗㅕㅑ"
+          },
+          {
+            "Value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "DisplayValue": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          },
+          {
+            "Value": "Avds  dddd",
+            "DisplayValue": "Avds  dddd"
+          },
+          {
+            "Value": "      ",
+            "DisplayValue": "      "
+          }
+        ]
+      }
+    },
+    "3,3": {
+      "NameUsedInJavaScript": "Product_Name",
+      "BindingInfo": {
+        "TableName": "Table1",
+        "ColumnName": "Product_Name",
+        "GUID": "c1c42221-8cf0-412b-bae6-9b2aa770210a"
+      }
+    },
+    "3,10": {
+      "NameUsedInJavaScript": "Count",
+      "BindingInfo": {
+        "TableName": "Table1",
+        "ColumnName": "Count",
+        "GUID": "8d9c85e9-3f02-41c9-b50c-e62383c0efd1"
+      }
+    },
+    "3,18": {
+      "NameUsedInJavaScript": "Record_Date",
+      "BindingInfo": {
+        "TableName": "Table1",
+        "ColumnName": "Record_Date",
+        "GUID": "dbb00e26-1ee8-4b68-a8a4-3b51eb7fe065"
+      }
+    },
+    "4,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "Listview1",
+            "SheetNameOrIndex": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=importExceltoListview!sheetname"
+            },
+            "SkippedRows": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=importExceltoListview!skiprows"
+            },
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": "Product_Name",
+                "ColumnName": "Product_Name"
+              },
+              {
+                "Column": "Count",
+                "ColumnName": "Count"
+              },
+              {
+                "Column": "Record_Date",
+                "ColumnName": "Record_Date"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "The excel file was imported successfully!"
+          }
+        ],
+        "Text": "import(add)",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "5,41": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "Listview1",
+            "ImportExcelToListViewMode": 1,
+            "SheetNameOrIndex": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=importExceltoListview!sheetname"
+            },
+            "SkippedRows": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=importExceltoListview!skiprows"
+            },
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": "Product_Name",
+                "ColumnName": "Product_Name",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": "Count",
+                "ColumnName": "Count"
+              },
+              {
+                "Column": "Record_Date",
+                "ColumnName": "Record_Date"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "The excel file was imported successfully!"
+          }
+        ],
+        "Text": "import(merge)",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "8,41": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "10,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+            "ListViewName": "Listview1",
+            "ImportExcelToListViewMode": 2,
+            "SheetNameOrIndex": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=importExceltoListview!sheetname"
+            },
+            "SkippedRows": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=importExceltoListview!skiprows"
+            },
+            "ImportExcelToListViewColumnInfos": [
+              {
+                "Column": "Product_Name",
+                "ColumnName": "Product_Name",
+                "IsPrimaryKey": true
+              },
+              {
+                "Column": "Count",
+                "ColumnName": "Count"
+              },
+              {
+                "Column": "Record_Date",
+                "ColumnName": "Record_Date"
+              }
+            ],
+            "IsShowSuccessAlert": true,
+            "SuccessMessage": "The excel file was imported successfully!"
+          }
+        ],
+        "Text": "import(replace)",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 1,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 1,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 0,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "3,10": 2,
+      "3,18": 2,
+      "5,41": 3,
+      "7,32": 4,
+      "7,33": 2,
+      "7,34": 2,
+      "7,35": 2,
+      "7,36": 2,
+      "7,37": 2,
+      "7,38": 2,
+      "8,32": 2,
+      "8,33": 2,
+      "8,34": 2,
+      "8,35": 2,
+      "8,36": 2,
+      "8,37": 2,
+      "8,38": 2,
+      "10,32": 4,
+      "10,33": 2,
+      "10,34": 2,
+      "10,35": 2,
+      "10,36": 2,
+      "10,37": 2,
+      "10,38": 2,
+      "11,32": 2,
+      "11,33": 2,
+      "11,34": 2,
+      "11,35": 2,
+      "11,36": 2,
+      "11,37": 2,
+      "11,38": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,3,11,28",
+    "2,32,1,7",
+    "4,32,2,7",
+    "2,41,1,14",
+    "3,41,1,14",
+    "5,41,2,14",
+    "8,41,2,14",
+    "7,32,2,7",
+    "10,32,2,7",
+    "3,3,1,7",
+    "3,10,1,8",
+    "3,18,1,13",
+    "2,3,1,7",
+    "2,10,1,8",
+    "2,18,1,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "password",
+      "Formula": "importExceltoListview!$AP$3"
+    },
+    {
+      "Name": "sheetname",
+      "Formula": "importExceltoListview!$AP$6"
+    },
+    {
+      "Name": "skiprows",
+      "Formula": "importExceltoListview!$AP$9"
+    }
+  ]
+}//gOb3eAvAPk9hc2pdkCHyr8cqjL1MaQmBylz5D1wCyD9Q3yU6zaQ56bnmpd6hRGHN+LKLZelxA8rmrXGM+ZOWDcaz0Pt6O2LH9FZFqadFQJjTG5WWcpMPG7BdIsHBTBsW3crJyNopDEF+0ctNc+nOGQo8CAGD9G6QN9B4QQBkt165oHGVCnzPlxXYKDIR8ES813CL57UkPWrZdlMpVB4AwXNWqBcV0qbWJ6S8lZX2e+YrenpPicr/om1rAoQovRha2op8kV7D/L53nKtebQPWYRF6Rk0SxXtGXssm73c6pvB047dC4MFDbCmOPZIXEKe1F5qsIUqN/DxscVkrx3YHuhwuy+QUhihG6qchUIQ98gv77i0kih432cM22KpYlzpkxjRdc7w6TaDSAP9R2t667aGY4YCyi/L2QYrGlMsNsIaJ06MIqc2cFqLfUiFsnKWnvI3fLKUctyCd2pkduy43idXup5mWzrJpBNJ1g9j/2yv8oihqAEw+rpaCKxtwTDoncaz7QcJs7Bebwpvg9tyD5tWvsjZ/CYaUw1rKT0BNIcLr/Fdj9ftEy8rw/aLMEXRRGUPRwTOqt4OWGlrE/wYcuWEUzS4pc585WT0Y3UpAjGh6aKn1ZKdYZaGpr4uRTyQJSycW+LPff+IHpQqIUQ3WaaJssXDm4aQCcfTtSSj2uhn30k4zR/6/M0n6Yct6Tc5hHPB/IFaFZ1EaKtSjiGmAiZfBMegM3aWlm+lby8d1EK3zy8XRux9MzgNMym6vO7QiLg0m9O504q8MhjVfMef6NM3SlA4RMyGlbO7MI9DhqSIMPtNoA4TV4rGostsJFjYBCAc3xalPDonRiJJ4GebwrDlIW17yROoIZTMEOOVFiUbxqFKdGEmq+9lgBnYM2i1idkoASsTFvZD4X8FJQDT99g==|920

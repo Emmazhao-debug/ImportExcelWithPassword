@@ -1,0 +1,789 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,41": "File Path",
+    "2,32": "ExportExcel",
+    "2,41": "C:\\temp\\exportfiletestpassword.xlsx",
+    "5,32": "ImportExcel_AddMode",
+    "5,41": "SheetName",
+    "8,32": "ImportExcel_MergeMode",
+    "9,41": "Skip Rows",
+    "11,32": "ImportExcel_ReplaceMode",
+    "13,41": "Password"
+  },
+  "AttachInfos": {
+    "2,3": {
+      "ListViewInfo": {
+        "Name": "Listview2",
+        "TableName": "Table1",
+        "RowIndex": 2,
+        "ColumnIndex": 3,
+        "RowCount": 13,
+        "ColumnCount": 28,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,32": {
+      "CellComment": {
+        "Comments": "cellname\r\n"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "ExportExcel",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "filepath",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP3"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "password",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP15"
+                }
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          }
+        ],
+        "Text": "ExportExcel",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,41": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "C:\\temp\\exportfiletestpassword.xlsx"
+      }
+    },
+    "3,3": {
+      "BindingInfo": {
+        "TableName": "Table1",
+        "ColumnName": "Product_Name",
+        "GUID": "8f32dcc2-2278-409d-8ec2-8166c50385c7"
+      }
+    },
+    "3,10": {
+      "BindingInfo": {
+        "TableName": "Table1",
+        "ColumnName": "Count",
+        "GUID": "5278dbf4-04aa-4467-99ce-15ea5bbec929"
+      }
+    },
+    "3,18": {
+      "BindingInfo": {
+        "TableName": "Table1",
+        "ColumnName": "Record_Date",
+        "GUID": "5573a41d-e1ba-4009-9c61-e6bee5f9755c"
+      }
+    },
+    "5,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "ImportExcel_AddMode",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "filepath",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP3"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "sheetname",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP7"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "skiprows",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP11"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "password",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP15"
+                }
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          }
+        ],
+        "Text": "ImportExcel_AddMode",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,41": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "8,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "ImportExcel_MergeMode",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "filepath",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP3"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "sheetname",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP7"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "skiprows",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP11"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "password",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP15"
+                }
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          }
+        ],
+        "Text": "ImportExcel_MergeMode",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "10,41": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "11,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "ImportExcel_ReplaceMode",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "filepath",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP3"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "sheetname",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP7"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "skiprows",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP11"
+                }
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "ParamName": "password",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ImportExceltoListviewServerSide!AP15"
+                }
+              }
+            ],
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": true
+          }
+        ],
+        "Text": "ImportExcel_ReplaceMode",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "14,41": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "Items": [
+          {
+            "Value": "xA123456@ga",
+            "DisplayValue": "xA123456@ga"
+          },
+          {
+            "Value": "中文密码输入[01]",
+            "DisplayValue": "中文密码输入[01]"
+          },
+          {
+            "Value": "行けそう０１０２",
+            "DisplayValue": "行けそう０１０２"
+          },
+          {
+            "Value": "셛져ㅐㅗㅕㅑ",
+            "DisplayValue": "셛져ㅐㅗㅕㅑ"
+          },
+          {
+            "Value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "DisplayValue": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          },
+          {
+            "Value": "Avds  dddd",
+            "DisplayValue": "Avds  dddd"
+          },
+          {
+            "Value": "      ",
+            "DisplayValue": "      "
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 0,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,41": 1,
+      "3,3": 2,
+      "3,4": 2,
+      "3,5": 2,
+      "3,6": 2,
+      "3,7": 2,
+      "3,8": 2,
+      "3,9": 2,
+      "3,10": 2,
+      "3,11": 2,
+      "3,12": 2,
+      "3,13": 2,
+      "3,14": 2,
+      "3,15": 2,
+      "3,16": 2,
+      "3,17": 2,
+      "3,18": 2,
+      "3,19": 2,
+      "3,20": 2,
+      "3,21": 2,
+      "3,22": 2,
+      "3,23": 2,
+      "3,24": 2,
+      "3,25": 2,
+      "3,26": 2,
+      "3,27": 2,
+      "3,28": 2,
+      "3,29": 2,
+      "3,30": 2,
+      "4,3": 2,
+      "4,4": 2,
+      "4,5": 2,
+      "4,6": 2,
+      "4,7": 2,
+      "4,8": 2,
+      "4,9": 2,
+      "4,10": 2,
+      "4,11": 2,
+      "4,12": 2,
+      "4,13": 2,
+      "4,14": 2,
+      "4,15": 2,
+      "4,16": 2,
+      "4,17": 2,
+      "4,18": 2,
+      "4,19": 2,
+      "4,20": 2,
+      "4,21": 2,
+      "4,22": 2,
+      "4,23": 2,
+      "4,24": 2,
+      "4,25": 2,
+      "4,26": 2,
+      "4,27": 2,
+      "4,28": 2,
+      "4,29": 2,
+      "4,30": 2,
+      "5,3": 2,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "5,18": 2,
+      "5,19": 2,
+      "5,20": 2,
+      "5,21": 2,
+      "5,22": 2,
+      "5,23": 2,
+      "5,24": 2,
+      "5,25": 2,
+      "5,26": 2,
+      "5,27": 2,
+      "5,28": 2,
+      "5,29": 2,
+      "5,30": 2,
+      "5,32": 3,
+      "6,3": 2,
+      "6,4": 2,
+      "6,5": 2,
+      "6,6": 2,
+      "6,7": 2,
+      "6,8": 2,
+      "6,9": 2,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 2,
+      "6,13": 2,
+      "6,14": 2,
+      "6,15": 2,
+      "6,16": 2,
+      "6,17": 2,
+      "6,18": 2,
+      "6,19": 2,
+      "6,20": 2,
+      "6,21": 2,
+      "6,22": 2,
+      "6,23": 2,
+      "6,24": 2,
+      "6,25": 2,
+      "6,26": 2,
+      "6,27": 2,
+      "6,28": 2,
+      "6,29": 2,
+      "6,30": 2,
+      "6,41": 4,
+      "6,42": 2,
+      "6,43": 2,
+      "6,44": 2,
+      "6,45": 2,
+      "6,46": 2,
+      "6,47": 2,
+      "6,48": 2,
+      "6,49": 2,
+      "6,50": 2,
+      "6,51": 2,
+      "6,52": 2,
+      "6,53": 2,
+      "6,54": 2,
+      "6,55": 2,
+      "6,56": 2,
+      "6,57": 2,
+      "6,58": 2,
+      "7,3": 2,
+      "7,4": 2,
+      "7,5": 2,
+      "7,6": 2,
+      "7,7": 2,
+      "7,8": 2,
+      "7,9": 2,
+      "7,10": 2,
+      "7,11": 2,
+      "7,12": 2,
+      "7,13": 2,
+      "7,14": 2,
+      "7,15": 2,
+      "7,16": 2,
+      "7,17": 2,
+      "7,18": 2,
+      "7,19": 2,
+      "7,20": 2,
+      "7,21": 2,
+      "7,22": 2,
+      "7,23": 2,
+      "7,24": 2,
+      "7,25": 2,
+      "7,26": 2,
+      "7,27": 2,
+      "7,28": 2,
+      "7,29": 2,
+      "7,30": 2,
+      "7,41": 2,
+      "7,42": 2,
+      "7,43": 2,
+      "7,44": 2,
+      "7,45": 2,
+      "7,46": 2,
+      "7,47": 2,
+      "7,48": 2,
+      "7,49": 2,
+      "7,50": 2,
+      "7,51": 2,
+      "7,52": 2,
+      "7,53": 2,
+      "7,54": 2,
+      "7,55": 2,
+      "7,56": 2,
+      "7,57": 2,
+      "7,58": 2,
+      "8,3": 2,
+      "8,4": 2,
+      "8,5": 2,
+      "8,6": 2,
+      "8,7": 2,
+      "8,8": 2,
+      "8,9": 2,
+      "8,10": 2,
+      "8,11": 2,
+      "8,12": 2,
+      "8,13": 2,
+      "8,14": 2,
+      "8,15": 2,
+      "8,16": 2,
+      "8,17": 2,
+      "8,18": 2,
+      "8,19": 2,
+      "8,20": 2,
+      "8,21": 2,
+      "8,22": 2,
+      "8,23": 2,
+      "8,24": 2,
+      "8,25": 2,
+      "8,26": 2,
+      "8,27": 2,
+      "8,28": 2,
+      "8,29": 2,
+      "8,30": 2,
+      "8,32": 3,
+      "9,3": 2,
+      "9,4": 2,
+      "9,5": 2,
+      "9,6": 2,
+      "9,7": 2,
+      "9,8": 2,
+      "9,9": 2,
+      "9,10": 2,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "9,19": 2,
+      "9,20": 2,
+      "9,21": 2,
+      "9,22": 2,
+      "9,23": 2,
+      "9,24": 2,
+      "9,25": 2,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,30": 2,
+      "10,3": 2,
+      "10,4": 2,
+      "10,5": 2,
+      "10,6": 2,
+      "10,7": 2,
+      "10,8": 2,
+      "10,9": 2,
+      "10,10": 2,
+      "10,11": 2,
+      "10,12": 2,
+      "10,13": 2,
+      "10,14": 2,
+      "10,15": 2,
+      "10,16": 2,
+      "10,17": 2,
+      "10,18": 2,
+      "10,19": 2,
+      "10,20": 2,
+      "10,21": 2,
+      "10,22": 2,
+      "10,23": 2,
+      "10,24": 2,
+      "10,25": 2,
+      "10,26": 2,
+      "10,27": 2,
+      "10,28": 2,
+      "10,29": 2,
+      "10,30": 2,
+      "11,3": 2,
+      "11,4": 2,
+      "11,5": 2,
+      "11,6": 2,
+      "11,7": 2,
+      "11,8": 2,
+      "11,9": 2,
+      "11,10": 2,
+      "11,11": 2,
+      "11,12": 2,
+      "11,13": 2,
+      "11,14": 2,
+      "11,15": 2,
+      "11,16": 2,
+      "11,17": 2,
+      "11,18": 2,
+      "11,19": 2,
+      "11,20": 2,
+      "11,21": 2,
+      "11,22": 2,
+      "11,23": 2,
+      "11,24": 2,
+      "11,25": 2,
+      "11,26": 2,
+      "11,27": 2,
+      "11,28": 2,
+      "11,29": 2,
+      "11,30": 2,
+      "11,32": 3,
+      "12,3": 2,
+      "12,4": 2,
+      "12,5": 2,
+      "12,6": 2,
+      "12,7": 2,
+      "12,8": 2,
+      "12,9": 2,
+      "12,10": 2,
+      "12,11": 2,
+      "12,12": 2,
+      "12,13": 2,
+      "12,14": 2,
+      "12,15": 2,
+      "12,16": 2,
+      "12,17": 2,
+      "12,18": 2,
+      "12,19": 2,
+      "12,20": 2,
+      "12,21": 2,
+      "12,22": 2,
+      "12,23": 2,
+      "12,24": 2,
+      "12,25": 2,
+      "12,26": 2,
+      "12,27": 2,
+      "12,28": 2,
+      "12,29": 2,
+      "12,30": 2,
+      "13,3": 2,
+      "13,4": 2,
+      "13,5": 2,
+      "13,6": 2,
+      "13,7": 2,
+      "13,8": 2,
+      "13,9": 2,
+      "13,10": 2,
+      "13,11": 2,
+      "13,12": 2,
+      "13,13": 2,
+      "13,14": 2,
+      "13,15": 2,
+      "13,16": 2,
+      "13,17": 2,
+      "13,18": 2,
+      "13,19": 2,
+      "13,20": 2,
+      "13,21": 2,
+      "13,22": 2,
+      "13,23": 2,
+      "13,24": 2,
+      "13,25": 2,
+      "13,26": 2,
+      "13,27": 2,
+      "13,28": 2,
+      "13,29": 2,
+      "13,30": 2,
+      "14,3": 2,
+      "14,4": 2,
+      "14,5": 2,
+      "14,6": 2,
+      "14,7": 2,
+      "14,8": 2,
+      "14,9": 2,
+      "14,10": 2,
+      "14,11": 2,
+      "14,12": 2,
+      "14,13": 2,
+      "14,14": 2,
+      "14,15": 2,
+      "14,16": 2,
+      "14,17": 2,
+      "14,18": 2,
+      "14,19": 2,
+      "14,20": 2,
+      "14,21": 2,
+      "14,22": 2,
+      "14,23": 2,
+      "14,24": 2,
+      "14,25": 2,
+      "14,26": 2,
+      "14,27": 2,
+      "14,28": 2,
+      "14,29": 2,
+      "14,30": 2,
+      "14,41": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,3,11,28",
+    "3,3,1,7",
+    "3,10,1,8",
+    "3,18,1,13",
+    "2,32,2,7",
+    "2,41,2,18",
+    "6,41,2,18",
+    "10,41,2,18",
+    "14,41,2,18",
+    "5,32,2,7",
+    "8,32,2,7",
+    "11,32,2,7",
+    "2,3,1,7",
+    "2,10,1,8",
+    "2,18,1,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Wume5uZoTs+lvgdOunsXjzXdzKYWgwAs8vXrG1jVdpKQDxJUPuh30veAl5m0e1GHuZjLaBfAx0MD5SekRh5dgJJkg+aP+MHTFAgBxCCh1Q4s+Q7bfvZRX92cicvX504r5hEs8mH/BvnqHiUsBUk7piR1Mmwv7KZwliA4vVug7X3z4ueqVF/bfj3QrxZHcSaAoqbsE+l2ZpO6t6wZfVszoQILoJWn8AVr+7QSkYa83coKSTDHtfkkzzzDtXKTlJcgw5XDH/Vx4XTHWJOxfPKWiAAMt3v9BMNvV8QNjaJJU6ovAb/j2zbFSRj/xBrqQViu+dgULwWyPmUfNKW1YTT14X31QRdrYMvQUQcr0Vo2nbFvPIbUFGXUwejistNFCh+eiCGNKS+UP8n9LWSRtno6i+3LySIKItyPWFqT+74kvzrlQ9ojNxVjWA8kctfsp9dQo13AhIT+O7MJAHxTUHN3FC2s713kFIrgkIsyDhsT3L+OWZIwMznLIKcd31E899pgXOB4sBVZwtdqfCl5VnFiHe0SjpZdjS0B7UcBe3QcFvcb4FaBB+JwZSOmpZYnSxvH7eo+08IFlIadzXzhAtDf2AOzlYVH9mO0tE/2a2xItDoxTgJGLg1sgJYMs+igAH+fy/yyRu5mfYbhQZ1ByLOaoe4Eg5HuMSquZgg4cpvnSFOv4fLH1CF+EWoAORRhhvTgZ57ubxDL3F01Oy3xYhIrvwdZPeJuge17EGbwDDfQ9d3Kg2Sw4/pJl7Lqa/jK3CMbDbCdgBA1C8qaAr8PNxImwASSygzRJAsoEFAisU3eBF+EyNejYf6r/fsU2KbRAhadbIKLWB6ztjasx0T/JSvuxjsF3omSbvhNse4iBFAcRPdFTLTREoObAwtJp9NFvq0qCac1jH4sihsHDMD0N0ooTw==|920

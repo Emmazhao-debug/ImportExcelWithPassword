@@ -1,0 +1,106 @@
+{
+  "Name": "ImportExcel_ReplaceMode",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "filepath",
+          "DataValidationInfo": {}
+        },
+        {
+          "ArrayItems": [],
+          "Name": "sheetname",
+          "DataValidationInfo": {}
+        },
+        {
+          "ArrayItems": [],
+          "Name": "skiprows",
+          "DataValidationInfo": {}
+        },
+        {
+          "ArrayItems": [],
+          "Name": "password",
+          "DataValidationInfo": {}
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportExcelCommand, ServerDesignerCommon",
+      "FilePath": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=filepath"
+      },
+      "SheetNameOrIndex": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=sheetname"
+      },
+      "SkippedRows": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=skiprows"
+      },
+      "Password": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=password"
+      },
+      "TableName": "Table1",
+      "ImportMode": 2,
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "Table1",
+            "ColumnName": "ID",
+            "GUID": "633154c2-69f3-4a1a-a168-6c896bb561e8"
+          },
+          "ExcelColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Table1",
+            "ColumnName": "Product_Name",
+            "GUID": "e828fcc9-0518-4004-98ee-b2b3ed588110"
+          },
+          "ExcelColumnNameOrIndex": "Product_Name"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Table1",
+            "ColumnName": "Count",
+            "GUID": "681a876a-a36d-4125-8202-a868a37eb571"
+          },
+          "ExcelColumnNameOrIndex": "Count"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Table1",
+            "ColumnName": "Record_Date",
+            "GUID": "bdb6273c-8e85-417a-aef5-1a21c5bb58d9"
+          },
+          "ExcelColumnNameOrIndex": "Record_Date"
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

@@ -1,0 +1,14 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "KpKfC^V!@o2C"
+  },
+  "ShareCommandContainers": [],
+  "ListviewLoadingIndicatorSettings": {},
+  "GlobalProperties": [],
+  "WebSitePort": 48840,
+  "UserServicePort": 24338,
+  "StartDateFiscalYear": 4,
+  "BaseOnStartingMonth": true,
+  "CellTypeSpinInfos": [],
+  "AuditingList": {}
+}
