@@ -289,5 +289,15 @@
     },
     "LockDateTime": "2023-12-07T18:21:06.7132296+08:00",
     "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/ImportExcelAndTranscation2",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "GRAPECITY\\EmmaZhao",
+      "Email": "Emma.zhao@developertools.com"
+    },
+    "LockDateTime": "2023-12-07T18:22:17.4016392+08:00",
+    "ModuleType": 15
   }
 ]
