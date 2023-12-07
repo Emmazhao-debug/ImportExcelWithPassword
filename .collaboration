@@ -132,55 +132,19 @@
   },
   {
     "ModuleName": "ServerCommand/ImportExcel_AddMode",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:33:15.1904038+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\ImportExcel_AddMode.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/ExportExcel",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:33:15.190413+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\ExportExcel.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/ImportExcel_MergeMode",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:33:15.1904156+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\ImportExcel_MergeMode.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/ImportExcel_ReplaceMode",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:33:15.1904177+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\ImportExcel_ReplaceMode.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ApplicationSetting",
@@ -278,16 +242,7 @@
   },
   {
     "ModuleName": "ServerCommand/ImportExcel_AddMode1aaaa",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:33:15.1904068+08:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\ImportExcel_AddMode1aaaa.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/Server Command2",
@@ -303,16 +258,6 @@
   },
   {
     "ModuleName": "ServerCommand/Server Command5",
-    "ModuleType": 15
-  },
-  {
-    "ModuleName": "ServerCommand/ImportExcel_globalvariable",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:33:15.1904105+08:00",
     "ModuleType": 15
   }
 ]
