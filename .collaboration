@@ -192,7 +192,16 @@
   },
   {
     "ModuleName": "CustomLibrary",
-    "ModuleType": 12
+    "State": 1,
+    "LockedBy": {
+      "UserName": "GRAPECITY\\EmmaZhao",
+      "Email": "Emma.zhao@developertools.com"
+    },
+    "LockDateTime": "2023-12-07T17:02:10.8951624+08:00",
+    "ModuleType": 12,
+    "ToRemoveFiles": [
+      "CustomLibraries.json"
+    ]
   },
   {
     "ModuleName": "MapJsonFile",
