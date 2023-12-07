@@ -266,35 +266,5 @@
     },
     "LockDateTime": "2023-12-07T17:06:24.2533915+08:00",
     "ModuleType": 15
-  },
-  {
-    "ModuleName": "ServerCommand/aaaa",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:06:49.9548318+08:00",
-    "ModuleType": 15
-  },
-  {
-    "ModuleName": "ServerCommand/サーバーサイドコマンド1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:07:27.0550989+08:00",
-    "ModuleType": 15
-  },
-  {
-    "ModuleName": "ServerCommand/ffsdf",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:07:48.4569813+08:00",
-    "ModuleType": 15
   }
 ]
