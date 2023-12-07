@@ -114,17 +114,7 @@
   },
   {
     "ModuleName": "PCPage/ImportExceltoListviewServerSide",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T16:52:56.5830584+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ImportExceltoListviewServerSide.json",
-      "Pages\\ImportExceltoListviewServerSide.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MasterPCPage/Default Master",
@@ -192,16 +182,7 @@
   },
   {
     "ModuleName": "CustomLibrary",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:02:10.8951624+08:00",
-    "ModuleType": 12,
-    "ToRemoveFiles": [
-      "CustomLibraries.json"
-    ]
+    "ModuleType": 12
   },
   {
     "ModuleName": "MapJsonFile",
@@ -229,82 +210,34 @@
   },
   {
     "ModuleName": "ServerCommand/ImportExcel_AddMode_formula",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T16:33:11.2475155+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/Server Command1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T16:35:59.3571083+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/ImportExcel_bigthan255",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T16:52:56.582912+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/ImportExcel_AddMode1aaaa",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:06:24.2533915+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/Server Command2",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:10:04.616367+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/Server Command3",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:12:09.2588613+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/Server Command4",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:14:14.3524413+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/Server Command5",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:20:29.8832478+08:00",
     "ModuleType": 15
   }
 ]
