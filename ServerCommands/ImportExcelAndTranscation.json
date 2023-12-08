@@ -1,0 +1,145 @@
+{
+  "Name": "ImportExcelAndTranscation",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "filepath",
+          "DataValidationInfo": {}
+        },
+        {
+          "ArrayItems": [],
+          "Name": "sheetname",
+          "DataValidationInfo": {}
+        },
+        {
+          "ArrayItems": [],
+          "Name": "skiprows",
+          "DataValidationInfo": {}
+        },
+        {
+          "ArrayItems": [],
+          "Name": "password",
+          "DataValidationInfo": {}
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "Table1",
+          "UpdateType": "add",
+          "ShowConfirm": false,
+          "UpdateBindingValues": [
+            {
+              "BindingInfo": {
+                "TableName": "Table1",
+                "ColumnName": "Product_Name",
+                "GUID": "a0fe3445-b28a-4cd4-94bb-85ef7d65da25"
+              },
+              "Value": "ServerSide"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "Table1",
+                "ColumnName": "Count",
+                "GUID": "0e1e1393-625f-4106-a11b-e13a18a7e406"
+              },
+              "Value": "1200"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "Table1",
+                "ColumnName": "Record_Date",
+                "GUID": "d44e509b-004f-497c-8f58-50543547ef43"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=NOW()"
+              }
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.Commands.ServerImportExportExcelCommand, ServerDesignerCommon",
+          "FilePath": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=filepath"
+          },
+          "SheetNameOrIndex": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=sheetname"
+          },
+          "SkippedRows": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=skiprows"
+          },
+          "Password": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=password"
+          },
+          "TableName": "Table1",
+          "Columns": [
+            {
+              "BindingColumn": {
+                "TableName": "Table1",
+                "ColumnName": "ID",
+                "GUID": "e4798208-b835-4d49-8b57-8be99231d2f3"
+              },
+              "ExcelColumnNameOrIndex": "ID",
+              "IsPrimaryKey": true
+            },
+            {
+              "BindingColumn": {
+                "TableName": "Table1",
+                "ColumnName": "Product_Name",
+                "GUID": "1b07fa93-bf05-4426-80ca-46040bbe6623"
+              },
+              "ExcelColumnNameOrIndex": "Product_Name"
+            },
+            {
+              "BindingColumn": {
+                "TableName": "Table1",
+                "ColumnName": "Count",
+                "GUID": "2de6d88f-d0e5-4698-b67d-4a22a3bc6c7b"
+              },
+              "ExcelColumnNameOrIndex": "Count"
+            },
+            {
+              "BindingColumn": {
+                "TableName": "Table1",
+                "ColumnName": "Record_Date",
+                "GUID": "c65f0a86-ee80-4a95-b809-3e3e360c6a2f"
+              },
+              "ExcelColumnNameOrIndex": "Record_Date"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

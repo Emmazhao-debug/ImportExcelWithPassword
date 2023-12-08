@@ -4,7 +4,12 @@
   },
   "ShareCommandContainers": [],
   "ListviewLoadingIndicatorSettings": {},
-  "GlobalProperties": [],
+  "GlobalProperties": [
+    {
+      "Name": "password_g1",
+      "Value": "05123090"
+    }
+  ],
   "WebSitePort": 48840,
   "UserServicePort": 24338,
   "StartDateFiscalYear": 4,

@@ -1,0 +1,91 @@
+{
+  "Name": "ImportExcel_globalvariable",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "filepath",
+          "DataValidationInfo": {},
+          "TestData": "C:\\temp\\exportfiletestpassword.xlsx"
+        },
+        {
+          "ArrayItems": [],
+          "Name": "Parameter1",
+          "DataValidationInfo": {}
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportExcelCommand, ServerDesignerCommon",
+      "FilePath": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=filepath"
+      },
+      "Password": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=password_g1"
+      },
+      "TableName": "Table1",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "Table1",
+            "ColumnName": "ID",
+            "GUID": "0ac235d8-f4aa-4da5-bbca-7ccdaebd0d73"
+          },
+          "ExcelColumnNameOrIndex": "ID",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Table1",
+            "ColumnName": "Product_Name",
+            "GUID": "5ba32252-5c8b-4743-ad24-0f0d6e3a5d9a"
+          },
+          "ExcelColumnNameOrIndex": "Product_Name"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Table1",
+            "ColumnName": "Count",
+            "GUID": "60da3a8f-c29a-4121-b62d-1cd1020fa137"
+          },
+          "ExcelColumnNameOrIndex": "Count"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "Table1",
+            "ColumnName": "Record_Date",
+            "GUID": "ef0f9d33-cc9a-46a8-b6e0-67ae16f3b84a"
+          },
+          "ExcelColumnNameOrIndex": "Record_Date"
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

@@ -1,0 +1,145 @@
+{
+  "Name": "ImportExcelAndTranscation2",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "filepath",
+          "DataValidationInfo": {}
+        },
+        {
+          "ArrayItems": [],
+          "Name": "sheetname",
+          "DataValidationInfo": {}
+        },
+        {
+          "ArrayItems": [],
+          "Name": "skiprows",
+          "DataValidationInfo": {}
+        },
+        {
+          "ArrayItems": [],
+          "Name": "password",
+          "DataValidationInfo": {}
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.ServerImportExportExcelCommand, ServerDesignerCommon",
+          "FilePath": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=filepath"
+          },
+          "SheetNameOrIndex": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=sheetname"
+          },
+          "SkippedRows": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=skiprows"
+          },
+          "Password": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=password"
+          },
+          "TableName": "Table1",
+          "Columns": [
+            {
+              "BindingColumn": {
+                "TableName": "Table1",
+                "ColumnName": "ID",
+                "GUID": "e4798208-b835-4d49-8b57-8be99231d2f3"
+              },
+              "ExcelColumnNameOrIndex": "ID",
+              "IsPrimaryKey": true
+            },
+            {
+              "BindingColumn": {
+                "TableName": "Table1",
+                "ColumnName": "Product_Name",
+                "GUID": "1b07fa93-bf05-4426-80ca-46040bbe6623"
+              },
+              "ExcelColumnNameOrIndex": "Product_Name"
+            },
+            {
+              "BindingColumn": {
+                "TableName": "Table1",
+                "ColumnName": "Count",
+                "GUID": "2de6d88f-d0e5-4698-b67d-4a22a3bc6c7b"
+              },
+              "ExcelColumnNameOrIndex": "Count"
+            },
+            {
+              "BindingColumn": {
+                "TableName": "Table1",
+                "ColumnName": "Record_Date",
+                "GUID": "c65f0a86-ee80-4a95-b809-3e3e360c6a2f"
+              },
+              "ExcelColumnNameOrIndex": "Record_Date"
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "Table1",
+          "UpdateType": "add",
+          "ShowConfirm": false,
+          "UpdateBindingValues": [
+            {
+              "BindingInfo": {
+                "TableName": "Table1",
+                "ColumnName": "Product_Name",
+                "GUID": "32b16aa1-29e1-4e80-90e8-8a8960e1dec0"
+              },
+              "Value": "ServerSide"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "Table1",
+                "ColumnName": "Count",
+                "GUID": "695144ba-b91c-4d2e-b613-dd35a75ba792"
+              },
+              "Value": "aaaa"
+            },
+            {
+              "BindingInfo": {
+                "TableName": "Table1",
+                "ColumnName": "Record_Date",
+                "GUID": "969ec826-e4d7-4072-a405-306dd2b99b9d"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=NOW()"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": []
+}

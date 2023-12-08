@@ -110,31 +110,11 @@
   },
   {
     "ModuleName": "PCPage/importExceltoListview",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T18:01:31.6423845+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\importExceltoListview.json",
-      "Pages\\importExceltoListview.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ImportExceltoListviewServerSide",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:29:01.7289523+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\ImportExceltoListviewServerSide.json",
-      "Pages\\ImportExceltoListviewServerSide.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MasterPCPage/Default Master",
@@ -158,17 +138,7 @@
   },
   {
     "ModuleName": "ApplicationSetting",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:33:15.1903696+08:00",
-    "ModuleType": 8,
-    "ToRemoveFiles": [
-      "ApplicationSettings.json",
-      "favicon.ico"
-    ]
+    "ModuleType": 8
   },
   {
     "ModuleName": "Theme",
@@ -232,14 +202,7 @@
   },
   {
     "ModuleName": "Plugin",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-08T13:47:20.4430949+08:00",
-    "ModuleType": 40,
-    "ToRemoveFiles": []
+    "ModuleType": 40
   },
   {
     "ModuleName": "PublishSetting",
@@ -279,52 +242,22 @@
   },
   {
     "ModuleName": "ServerCommand/ImportExcel_globalvariable",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T17:36:59.8441912+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/ImportExcelAndTranscation",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T18:21:06.7132296+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/ImportExcelAndTranscation2",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-07T18:22:17.4016392+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/ImportExcel_NoTranscation",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-08T11:30:15.0123148+08:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "PCPage/HTMLEditor",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "Emma.zhao@developertools.com"
-    },
-    "LockDateTime": "2023-12-08T13:43:03.8425096+08:00",
     "ModuleType": 1
   }
 ]
