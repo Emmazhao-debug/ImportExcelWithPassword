@@ -138,7 +138,17 @@
   },
   {
     "ModuleName": "MasterPCPage/Default Master",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "GRAPECITY\\EmmaZhao",
+      "Email": "Emma.zhao@developertools.com"
+    },
+    "LockDateTime": "2023-12-08T14:24:52.3781557+08:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\Default Master.json",
+      "MasterPages\\Default Master.rd"
+    ]
   },
   {
     "ModuleName": "ServerCommand/ImportExcel_AddMode",
