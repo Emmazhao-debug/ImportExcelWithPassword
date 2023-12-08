@@ -110,7 +110,17 @@
   },
   {
     "ModuleName": "PCPage/importExceltoListview",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "GRAPECITY\\EmmaZhao",
+      "Email": "Emma.zhao@developertools.com"
+    },
+    "LockDateTime": "2023-12-08T14:24:43.0145289+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\importExceltoListview.json",
+      "Pages\\importExceltoListview.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/ImportExceltoListviewServerSide",
@@ -119,7 +129,7 @@
       "UserName": "GRAPECITY\\EmmaZhao",
       "Email": "Emma.zhao@developertools.com"
     },
-    "LockDateTime": "2023-12-08T14:23:12.9289655+08:00",
+    "LockDateTime": "2023-12-08T14:24:43.0146116+08:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\ImportExceltoListviewServerSide.json",
